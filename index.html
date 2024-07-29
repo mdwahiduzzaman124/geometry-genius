@@ -125,11 +125,13 @@
                 <div class="flex items-center gap-3">
                   <input
                     type="text"
+                    id="Parallelogram-base"
                     placeholder="b"
                     class="w-[95px] h-[32px] bg-gray-200 rounded-md pl-3"
                   /><span>cm</span>
                   <input
                     type="text"
+                    id="Parallelogram-Hight"
                     placeholder="h"
                     class="w-[95px] h-[32px] bg-gray-200 rounded-md pl-3"
                   />
@@ -137,6 +139,7 @@
                 </div>
                 <div>
                   <button
+                    onclick="parallelogramBase()"
                     class="btn w-[350px] h-[56px] text-white bg-[#1090D8] mt-12"
                   >
                     Calculate
@@ -149,8 +152,8 @@
         </div>
         <!-- Area calculation -->
         <div
-          class="border-[#1111111A] border rounded-lg flex-1 ml-6 text-center pt-7 h-[454px]"
           id="area-calculation"
+          class="border-[#1111111A] border rounded-lg flex-1 ml-6 text-center pt-7 h-[454px]"
         >
           <h2><u class="text-xl font-bold">Area Calculation</u></h2>
         </div>
@@ -158,5 +161,6 @@
     </main>
     <script src="scripts/Triangle.js"></script>
     <script src="scripts/Rectangle.js"></script>
+    <script src="scripts/Parallelogram.js"></script>
   </body>
 </html>
