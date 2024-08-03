@@ -33,7 +33,7 @@
     <main class="grid justify-center">
       <section class="flex justify-evenly mt-12 md:w-[1820px]">
         <!-- type's -->
-        <div>
+        <div class="grid gap-5">
           <!-- 1st row of card -->
           <div class="flex gap-6">
             <!-- Triangle card -->
@@ -149,6 +149,115 @@
             </div>
           </div>
           <!-- 2nd row of card -->
+           <div class="flex gap-6">
+            <!-- Rhombus card -->
+            <div class="card bg-base-100 w-96 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img
+                  src="images/rhombus.png"
+                  alt="Triangle"
+                  class="rounded-xl"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-2xl font-bold">Rhombus</h2>
+                <p class="mb-5">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                <div class="flex items-center gap-3">
+                  <input
+                    type="text"
+                    id="d1"
+                    placeholder="d1"
+                    class="w-[95px] h-[32px] bg-gray-200 rounded-md pl-3"
+                  /><span>cm</span>
+                  <input
+                    type="text"
+                    id="d2"
+                    placeholder="d2"
+                    class="w-[95px] h-[32px] bg-gray-200 rounded-md pl-3"
+                  />
+                  <span>cm</span>
+                </div>
+                <div>
+                  <button
+                    onclick="rhombusCalculate()"
+                    class="btn w-[350px] h-[56px] text-white bg-[#1090D8] mt-12"
+                  >
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--Pentagon card -->
+            <div class="card bg-base-100 w-96 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img
+                  src="images/pentagon.png"
+                  alt="Triangle"
+                  class="rounded-xl"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-2xl font-bold">Pentagon</h2>
+                <p class="mb-5">Area (A) = 0.5 X p X b</p>
+                <div class="flex items-center gap-3">
+                  <input
+                    type="text"
+                    placeholder="p"
+                    class="w-[95px] h-[32px] bg-gray-200 rounded-md pl-3"
+                  /><span>cm</span>
+                  <input
+                    type="text"
+                    placeholder="b"
+                    class="w-[95px] h-[32px] bg-gray-200 rounded-md pl-3"
+                  />
+                  <span>cm</span>
+                </div>
+                <div>
+                  <button
+                    onclick="calculateRectangleArea()"
+                    class="btn w-[350px] h-[56px] text-white bg-[#1090D8] mt-12"
+                  >
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Ellipse card -->
+            <div class="card bg-base-100 w-96 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img
+                  src="images/ellipse.png"
+                  alt="parallelogram"
+                  class="rounded-xl"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-2xl font-bold">Ellipse</h2>
+                <p class="mb-5">Area (A) =&#960ab</p>
+                <div class="flex items-center gap-3">
+                  <input
+                    type="text"
+                    placeholder="a"
+                    class="w-[95px] h-[32px] bg-gray-200 rounded-md pl-3"
+                  /><span>cm</span>
+                  <input
+                    type="text"
+                    placeholder="b"
+                    class="w-[95px] h-[32px] bg-gray-200 rounded-md pl-3"
+                  />
+                  <span>cm</span>
+                </div>
+                <div>
+                  <button
+                    onclick="parallelogramBase()"
+                    class="btn w-[350px] h-[56px] text-white bg-[#1090D8] mt-12"
+                  >
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Area calculation -->
         <div
@@ -162,5 +271,6 @@
     <script src="scripts/Triangle.js"></script>
     <script src="scripts/Rectangle.js"></script>
     <script src="scripts/Parallelogram.js"></script>
+    <script src="scripts/Rhombus.js"></script>
   </body>
 </html>
